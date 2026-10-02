@@ -4,7 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kermesse Solidaria | Apoyo al Lic. Hugo Alfredo Condori Yujra</title>
-  <meta name="description" content="¡Kermesse Solidaria! Apoya al Lic. Hugo Alfredo Condori Yujra. Juegos, comida, rifas y mucha diversión por una gran causa.">
+  <meta name="description" content="¡Kermesse Solidaria el 18 de octubre 2026! Apoya al Lic. Hugo Alfredo Condori Yujra. Platos típicos, juegos, rifas y mucha solidaridad.">
+  <meta name="theme-color" content="#6b21a8">
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kermesse Solidaria · Apoyo al Lic. Hugo">
+  <meta property="og:description" content="18 de octubre 2026. Platos típicos, juegos y rifas por una gran causa. ¡Súmate!">
+  <meta property="og:locale" content="es_BO">
+  <meta property="og:site_name" content="Kermesse Solidaria Hugo">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kermesse Solidaria · Apoyo al Lic. Hugo">
+  <meta name="twitter:description" content="18 de octubre 2026. ¡Ven y apoya con platos, juegos y rifas!">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -717,6 +730,173 @@
       box-shadow: 0 6px 20px rgba(37,211,102,0.4);
     }
 
+
+    /* Countdown */
+    .countdown-box {
+      background: linear-gradient(135deg, #6b21a8, #a855f7);
+      color: white;
+      border-radius: 20px;
+      padding: 1.8rem 1.5rem;
+      text-align: center;
+      margin: 2rem auto 0;
+      max-width: 520px;
+      box-shadow: 0 10px 30px rgba(107,33,168,0.3);
+    }
+    .countdown-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      opacity: 0.95;
+    }
+    .countdown-grid {
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .countdown-item {
+      background: rgba(255,255,255,0.15);
+      border-radius: 14px;
+      padding: 0.7rem 0.9rem;
+      min-width: 70px;
+    }
+    .countdown-item .num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    .countdown-item .label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
+    }
+
+    /* Progress / Meta */
+    .meta-box {
+      background: white;
+      border-radius: 18px;
+      padding: 1.5rem;
+      margin: 2rem auto 0;
+      max-width: 480px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+    .meta-box h4 {
+      color: var(--purple);
+      margin-bottom: 0.6rem;
+      font-size: 1.05rem;
+    }
+    .progress-bar {
+      background: #ede9fe;
+      border-radius: 50px;
+      height: 16px;
+      overflow: hidden;
+      margin: 0.8rem 0 0.5rem;
+    }
+    .progress-fill {
+      background: linear-gradient(90deg, #22c55e, #16a34a);
+      height: 100%;
+      border-radius: 50px;
+      width: 28%;
+      transition: width 1s ease;
+    }
+    .meta-amounts {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      color: #555;
+    }
+    .meta-amounts strong { color: var(--purple); }
+
+    /* Share buttons */
+    .share-box {
+      text-align: center;
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      background: #faf5ff;
+      border-radius: 18px;
+    }
+    .share-box h4 {
+      color: var(--purple);
+      margin-bottom: 1rem;
+    }
+    .share-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      justify-content: center;
+    }
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1.1rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .share-btn:hover { transform: translateY(-2px); }
+    .share-wa { background: #25D366; color: white; }
+    .share-fb { background: #1877F2; color: white; }
+    .share-copy { background: #6b21a8; color: white; }
+
+    /* FAQ */
+    .faq-item {
+      background: white;
+      border-radius: 14px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.8rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+    .faq-item h4 {
+      color: var(--purple);
+      font-size: 1rem;
+      margin-bottom: 0.35rem;
+    }
+    .faq-item p {
+      font-size: 0.92rem;
+      color: #555;
+      margin: 0;
+    }
+
+    /* Gallery placeholder */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+    }
+    .gallery-item {
+      aspect-ratio: 1;
+      background: linear-gradient(135deg, #ede9fe, #fce7f3);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--purple);
+      border: 2px dashed #c4b5fd;
+    }
+
+    /* Map placeholder */
+    .map-placeholder {
+      background: #f3e8ff;
+      border-radius: 16px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: var(--purple);
+      border: 2px dashed #c4b5fd;
+      margin-top: 1rem;
+    }
+
   </style>
 </head>
 <body>
@@ -731,6 +911,7 @@
         
         <a href="#precios">Platos</a>
         <a href="#reservas">Reservas</a>
+        <a href="#faq">FAQ</a>
       </nav>
       <a href="https://wa.me/59164095731?text=Hola!%20Quiero%20reservar%20para%20la%20Kermesse%20Solidaria%20del%20Lic.%20Hugo" class="btn-header" target="_blank">📲 Reservar</a>
     </div>
@@ -740,7 +921,7 @@
   <section class="hero">
     <div class="hero-inner">
       <div>
-        <div class="hero-badge">🎉 Campaña de Solidaridad Nacional</div>
+        <div class="hero-badge">🎉 18 de octubre 2026 · Campaña Solidaria</div>
         <h1>¡Kermesse Solidaria<br><span>por el Lic. Hugo!</span></h1>
         <p class="hero-sub">
           Una jornada llena de juegos, comida, rifas y diversión para apoyar la recuperación 
@@ -800,7 +981,7 @@
             Foto: img/foto-hugo.png
           -->
           <img id="qrImage" 
-               src="img/qr-final.png" 
+               src="img/qr-final.png"
                alt="QR Altoke - CTA 120804-000-002" 
                style="width:180px;height:180px;object-fit:contain;border-radius:12px;background:#fff;padding:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);margin-bottom:0.8rem;cursor:pointer;"
                onclick="openQRModal()"
@@ -830,12 +1011,12 @@
         <div class="card">
           <div class="card-icon">📅</div>
           <h3>Fecha y horario</h3>
-          <p><strong>Próximamente</strong><br>(agregar fecha y horario exactos)</p>
+          <p><strong>18 de octubre de 2026</strong><br>Horario por confirmar</p>
         </div>
         <div class="card">
           <div class="card-icon">📍</div>
           <h3>Lugar</h3>
-          <p><strong>Por confirmar</strong><br>(agregar dirección o colonia)</p>
+          <p><strong>Por confirmar</strong><br>(próximamente la dirección)</p>
         </div>
         <div class="card">
           <div class="card-icon">🎯</div>
@@ -847,6 +1028,28 @@
           <h3>Para toda la familia</h3>
           <p>Ambiente seguro y divertido para niños, jóvenes y adultos.</p>
         </div>
+      </div>
+
+      <!-- Countdown -->
+      <div class="countdown-box" id="countdown">
+        <h3>⏳ Faltan para la Kermesse</h3>
+        <div class="countdown-grid">
+          <div class="countdown-item"><div class="num" id="cd-days">--</div><div class="label">Días</div></div>
+          <div class="countdown-item"><div class="num" id="cd-hours">--</div><div class="label">Horas</div></div>
+          <div class="countdown-item"><div class="num" id="cd-mins">--</div><div class="label">Min</div></div>
+          <div class="countdown-item"><div class="num" id="cd-secs">--</div><div class="label">Seg</div></div>
+        </div>
+      </div>
+
+      <!-- Meta de recaudación (edita los montos cuando quieras) -->
+      <div class="meta-box">
+        <h4>🎯 Meta solidaria</h4>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:28%"></div></div>
+        <div class="meta-amounts">
+          <span>Recaudado: <strong>Bs. 5.600</strong></span>
+          <span>Meta: <strong>Bs. 20.000</strong></span>
+        </div>
+        <p style="font-size:0.8rem;color:#888;margin-top:0.5rem;">* Montos de ejemplo — ajústalos cuando tengas los reales</p>
       </div>
 
 
@@ -914,7 +1117,19 @@
         </div>
       </div>
 
-<!-- Reservas WhatsApp -->
+      </div>
+
+      <!-- Mapa -->
+      <div style="margin-top:2.5rem;text-align:center;">
+        <h3 style="color:var(--purple);margin-bottom:0.3rem;">📍 Ubicación</h3>
+        <p style="color:#666;font-size:0.9rem;">Cuando confirmemos el lugar, aquí aparecerá el mapa</p>
+        <div class="map-placeholder">
+          <span style="font-size:2.2rem;">🗺️</span>
+          <span style="font-weight:600;">Mapa próximamente</span>
+        </div>
+      </div>
+
+      <!-- Reservas WhatsApp -->
       <div class="reservas" id="reservas">
         <h3>📲 Reserva tu lugar por WhatsApp</h3>
         <p>
@@ -977,6 +1192,60 @@
     </div>
   </section>
 
+
+  <!-- FAQ -->
+  <section style="padding: 4rem 1.5rem; background: var(--bg);" id="faq">
+    <div class="container">
+      <div class="section-title">
+        <h2>❓ Preguntas frecuentes</h2>
+        <p>Todo lo que necesitas saber de la kermesse</p>
+      </div>
+      <div style="max-width:640px;margin:0 auto;">
+        <div class="faq-item">
+          <h4>¿Habrá entradas?</h4>
+          <p>No. La entrada es libre. Solo pagas lo que consumas o juegues.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Puedo reservar platos con anticipación?</h4>
+          <p>¡Sí! Escríbenos al WhatsApp 64095731 y te confirmamos.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Cómo puedo donar si no puedo asistir?</h4>
+          <p>Escanea el QR de Altoke (CTA 120804-000-002) o usa el botón “Apoyar ahora”.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Puedo ser voluntario el día del evento?</h4>
+          <p>¡Claro! Escríbenos por WhatsApp y únete al equipo de apoyo.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Dónde será exactamente?</h4>
+          <p>El lugar se confirmará pronto. Síguenos y te avisamos por WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Compartir -->
+  <section style="padding: 3rem 1.5rem; background: white;">
+    <div class="container">
+      <div class="share-box">
+        <h4>📢 ¡Comparte y ayuda a difundir!</h4>
+        <div class="share-btns">
+          <a class="share-btn share-wa" href="https://wa.me/?text=%C2%A1%C3%9Anete%20a%20la%20Kermesse%20Solidaria%20por%20el%20Lic.%20Hugo!%2018%20de%20octubre%202026.%20https%3A%2F%2Farez017.github.io%2FKermesseIngHugo%2F%23urgente" target="_blank">
+            📱 WhatsApp
+          </a>
+          <a class="share-btn share-fb" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://arez017.github.io/KermesseIngHugo/'),'_blank');return false;">
+            📘 Facebook
+          </a>
+          <button class="share-btn share-copy" type="button" onclick="copyLink()">
+            🔗 Copiar enlace
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <p>
@@ -1026,57 +1295,63 @@
       document.body.style.overflow = '';
     }
 
-    // Descarga forzada del QR
+    // Descarga del QR (embebido → funciona siempre)
     function downloadQR(e) {
-      if (e) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-
-      const img = document.getElementById('modalQrImg') || document.getElementById('qrImage');
-      
-      try {
-        const canvas = document.createElement('canvas');
-        const w = img.naturalWidth || 300;
-        const h = img.naturalHeight || 300;
-        canvas.width = w;
-        canvas.height = h;
-        
-        const ctx = canvas.getContext('2d');
-        ctx.fillStyle = '#ffffff';
-        ctx.fillRect(0, 0, w, h);
-        ctx.drawImage(img, 0, 0, w, h);
-
-        // Método 1: toBlob
-        canvas.toBlob(function(blob) {
-          if (blob) {
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'QR-Altoke-Hugo.png';
-            link.style.display = 'none';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            setTimeout(() => URL.revokeObjectURL(url), 1500);
-          } else {
-            // Método 2: dataURL
-            const dataURL = canvas.toDataURL('image/png');
-            const link = document.createElement('a');
-            link.href = dataURL;
-            link.download = 'QR-Altoke-Hugo.png';
-            link.click();
-          }
-        }, 'image/png');
-      } catch (err) {
-        // Último recurso: abrir la imagen (el usuario puede guardarla con clic derecho)
-        alert('Haz clic derecho sobre el QR grande y elige “Guardar imagen como…”');
-      }
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      const img = document.getElementById('qrImage');
+      const a = document.createElement('a');
+      a.href = img.src;
+      a.download = 'QR-Altoke-Hugo.png';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
     }
 
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeQRModal({type:'keydown'});
     });
+
+
+    // Countdown hasta el 18 de octubre 2026 (hora local Bolivia ~ mediodía)
+    function updateCountdown() {
+      const target = new Date('2026-10-18T12:00:00').getTime();
+      const now = Date.now();
+      let diff = target - now;
+      if (diff < 0) diff = 0;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      const el = (id) => document.getElementById(id);
+      if (el('cd-days')) el('cd-days').textContent = days;
+      if (el('cd-hours')) el('cd-hours').textContent = hours.toString().padStart(2,'0');
+      if (el('cd-mins')) el('cd-mins').textContent = mins.toString().padStart(2,'0');
+      if (el('cd-secs')) el('cd-secs').textContent = secs.toString().padStart(2,'0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    function copyLink() {
+      const url = 'https://arez017.github.io/KermesseIngHugo/#urgente';
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          alert('¡Enlace copiado! Ahora puedes pegarlo donde quieras 💙');
+        }).catch(() => fallbackCopy(url));
+      } else {
+        fallbackCopy(url);
+      }
+    }
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      alert('¡Enlace copiado!');
+    }
 
     document.addEventListener('DOMContentLoaded', function() {
       const btn = document.getElementById('downloadQrBtn');
